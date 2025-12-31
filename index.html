@@ -3,154 +3,143 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Prasanna | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="./project.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <h2 class="text">PORTFOLIO</h2>
-        <nav class="navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Prasanna</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                ☰
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#skill">SKILL</a>
-            <a href="#contact">CONTACT</a>
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <h1 class="animate">Hi, I'm <span>Prasanna</span></h1>
+            <p class="animate delay">Frontend Developer & UI Designer</p>
+            <a href="#contact" class="btn btn-glow">Hire Me</a>
+        </div>
+    </section>
 
-        </nav>
-    </header>
-    <div class="box1">
+    <!-- about -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
 
-        <section class="home" id="home">
-            <h1>Hi, i'm PRASANNA</h1>
-            <br>
-            <h3 id="slide_right">Frontend developer . . . .</h2>
-                <br>
-                <p>
-                    Hi, I'm <strong>Prasanna</strong>, a passionate web developer with a keen interest in building
-                    responsive and user-friendly websites. I specialize in HTML, CSS, and JavaScript, and I enjoy
-                    creating
-                    clean and efficient code that delivers excellent user experiences. I am constantly learning new
-                    technologies and improving my skills to stay updated with the latest trends in web development.
-                    I
-                    love
-                    working on projects that challenge me and allow me to contribute meaningfully to teams and
-                    clients.
-                </p>
-                <img id="img1" src="./prasann new.jpeg" alt="">
-                <div class="logo">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <div>
-                        <button>More about me...</button>
+                <!-- PHOTO COLUMN -->
+                <div class="col-lg-4 text-center">
+                    <div class="photo-wrapper">
+                        <img src="./prasann new.jpeg" alt="Prasanna - Python Full Stack Developer">
                     </div>
+                </div>
 
-        </section>
+                <!-- TEXT COLUMN -->
+                <div class="col-lg-4 about-text">
+                    <h2 class="about-title">About Me</h2>
+                    <p class="about-desc">
+                        I am a Python Full-Stack Developer with a strong interest in building modern, scalable, and
+                        user-friendly web applications. I work across both frontend and backend development, allowing me
+                        to create complete solutions—from clean user interfaces to powerful server-side logic.
 
-    </div>
-    <div class="box2">
-        <section class="about" id="about">
-            <h1>About me..</h1>
-            <br>
-            <h2 id="h2tag">Fullstack Developer</h2>
-            <br>
-            <p id="ptag">
-                I'm prasanna i am from cuddalore i graduvate b.com 2022-25 passed out in Annamalai universcity
-                <br>
+                    
+                    </p>
 
+                    <div class="about-highlights">
+                        <div class="highlight">🐍 Python</div>
+                        <div class="highlight">🌐 Django</div>
+                        <div class="highlight">🎨 UI Design</div>
+                    </div>
+                </div>
 
-                Hello! I’m Prasanna, a curious and motivated individual with a love for coding and technology. My
-                portfolio reflects my journey of learning and creating projects in Python, web development, and design.
-                I aim to grow as a developer while contributing innovative solutions to real-world challenges. <br>
-                I have a strong foundation in web technologies and enjoy experimenting with new frameworks and tools. My
-                interests include UI/UX design, problem-solving, and collaborating on creative projects. Outside of
-                coding, I like reading tech blogs and exploring new software trends.
-            </p>
-            <div class="logo2">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-                <div>
-
-
-                    <img id="image2" src="./prasann new.jpeg" alt="">
-
-
-
-
-        </section>
-
-
-    </div>
-    <div class="box3">
-        
-        <section class="skill" id="skill">
-        
-        
-            <div class="skill-item" id="orange">
-                <i class="fa-brands fa-html5"></i>
-                <h3>HTML</h3>
-                
-                
-            </div>
-            <div class="skill-item" id="blue">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h3>CSS</h3>
-            </div>
-            
-           
-            <div class="skill-item" id="greeen">
-                <i class="fa-brands fa-python"></i>
-                <h3>Python</h3>
-            </div>
-       
-           
-
-
-
-        </section>
-
-
-
-
-
-    </div>
-
-    <div class="box4">
-        <section class="contact" id="contact">
-            <div class="content1">
-                <h1 id="tagform">contact me...</h1><br><br>
-                <label for="text">Name</label><br>
-                <input type="text" placeholder="enter name"><br><br>
-                <label for="text">Email id</label><br>
-                <input type="text" placeholder="enter your Email id"><br><br>
-               
-                <label for="text">Message me</label><br>
-                <input type="text" placeholder="enter your message"><br><br>
-                 <button id="formbutton">SUBMIT</button>
+                <!-- SKILLS CARD -->
+                <div class="col-lg-4">
+                    <div class="about-card">
+                        <h3>Tech Stack</h3>
+                        <ul>
+                            <li>Python, Django</li>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Bootstrap, REST APIs</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
+        </div>
+    </section>
 
-        </section>
 
 
+
+
+    <!-- SKILLS -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title">My Skills</h2>
+    <p class="text-center section-subtitle">Technologies and tools I work with as a Python Full-Stack Developer</p>
+
+    <div class="skills-grid">
+      <div class="skill-card">🐍 Python</div>
+      <div class="skill-card">🌐 Django</div>
+      <div class="skill-card">💻 HTML & CSS</div>
+      <div class="skill-card">📜 JavaScript</div>
+      <div class="skill-card">🅱 Bootstrap</div>
+      <div class="skill-card">🗄 MySQL</div>
+      <div class="skill-card">📂 Git & GitHub</div>
     </div>
+  </div>
+</section>
 
 
+    <!-- CONTACT -->
+ <section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <p class="section-subtitle text-center">Get in touch for projects, collaborations, or inquiries</p>
+
+    <form onsubmit="sendMail(); return false;" class="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-glow">Send Message</button>
+    </form>
+  </div>
+</section>
 
 
-
-
-
-
-
-
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
